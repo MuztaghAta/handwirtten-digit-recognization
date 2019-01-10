@@ -62,7 +62,8 @@ def load_data_wrapper(path):
 
     Obviously, this means we're using slightly different formats for the
     training data and the validation / test data. These formats turn out to be
-    the most convenient for use in our neural network code."""
+    the most convenient for use in our neural network code.
+    """
     tr_d, va_d, te_d = load_data(path)
     # training data
     training_inputs = [np.reshape(x, (784, 1)) for x in tr_d[0]]
@@ -80,7 +81,8 @@ def load_data_wrapper(path):
 def vectorized_result(j):
     """Return a 10-dimensional unit vector with a 1.0 in the jth position and
     zeroes elsewhere. This is used to convert a digit (0...9) into a
-    corresponding desired output from the neural network."""
+    corresponding desired output from the neural network.
+    """
     e = np.zeros((10, 1))
     e[j] = 1.0
     return e

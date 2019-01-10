@@ -1,5 +1,6 @@
 """This script provides an environment and hyper parameters to trains the
-neuron network."""
+neuron network.
+"""
 
 
 import mnist_loader as loader
@@ -11,8 +12,8 @@ path = './mnist.pkl.gz'
 train_data, validation_data, test_data = loader.load_data_wrapper(path)
 
 # hyper parameters
-# create a neuron network with a sizes list specifying the number of 
-# neurons in each layer
+# create a neuron network with a sizes list specifying the number of neurons
+# in each layer
 net = network.Network([784, 30, 10])
 mini_batch_size = 10
 epochs = 30

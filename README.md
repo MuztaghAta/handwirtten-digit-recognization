@@ -4,7 +4,21 @@ This is a well-known toy project, I play it for studying the book 'Neural Networ
 The codes is written for Python 3.6. I wrote (not copy for the book) most of the codes by myself to see whether my own codes works, and more importantly I want to improve my coding skill by comparing my codes with the codes provided in the book. Besides, coding line by line really helps understand the theory of neural networks since you have to recall the theory many times when writing the codes.
 
 # the 1st network class
-network.py + train.py
+network.py - neural network class
+train.py - training environment
+mnist_loader.py - data loader
+
 I created a main script 'train.py' that loads the mnist data, specifies hyperparameters and trains the network. I also did some changes to the module of 'mnist_loader' so that data path can be specified in 'train.py'. 
 
 # the 2nd network class
+activation_cost.py - activation+cost classes
+analysis2.py - plot performance results
+mnist_loader.py - data loader
+network2.py - the 2nd network class
+train2.py - training enviroment
+
+The modules for the 2nd network class include a number of features that are not supported by those for the 1st network class. 
+
+The 2nd network class enables 1) matrix-based approach to back propagation, 2) network initialization with different activation+cost functions, 3) monitor runtime, prediction accuracy and cost, 4) L2 regularization and dropout (neurons of hidden layers), 5) different weights/biases initialization approaches, and 6) save and load trained network model.
+
+The analysis2.py module defines a method that can plot any dimension of the training results, including runtime, accuracy and cost on training/evaluation data.

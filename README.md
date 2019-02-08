@@ -3,6 +3,8 @@ This is a well-known toy project, I play it for studying the book 'Neural Networ
 
 The codes is written for Python 3.6. I wrote (not copy for the book) most of the codes by myself to see whether my own codes works, and more importantly I want to improve my coding skill by comparing my codes with the codes provided in the book. Besides, coding line by line really helps understand the theory of neural networks since you have to recall the theory many times when writing the codes. It's also worth mentioning that the modules that I wrote (e.g. network2.py and analysis.py) provide more features than the ones provided by the NNDL book.
 
+All the basic and fundamental components of a neural network, like feedforward, backpropagation, stochastic gradient descent, relularization, and dropout, are implemented from scrach rather than calling the methods from Tensorflow or Keras, which would be much much handy but less less helpful to understand the theory and the algorithms.
+
 # the 1st network class
 network.py - neural network class, 
 train.py - training environment, 

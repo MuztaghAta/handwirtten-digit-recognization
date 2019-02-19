@@ -18,9 +18,23 @@ analysis2.py - plot performance results,
 mnist_loader.py - data loader, 
 network2.py - the 2nd network class, 
 train2.py - training enviroment
+network2_keras.py
+train2_keras.py
+vanilla_model_classic.h5
 
 The modules for the 2nd network class include a number of features that are not supported by those for the 1st network class. 
 
 The 2nd network class enables 1) matrix-based approach to back propagation, 2) network initialization with different activation+cost functions, 3) monitor runtime, prediction accuracy and cost, 4) L2 regularization and dropout (neurons of hidden layers), 5) different weights/biases initialization approaches, and 6) save and load trained network model. Note that some of the above features are not implemented in the codes for the NNDL book including 2, runtime monitoring in 3 and dropout in 4. 
 
 The analysis2.py module defines a method that can plot any dimension of the training results, including runtime, accuracy and cost on training/evaluation data.
+
+The above network was also implemented suing Keras, which takes significantly less codes. A trained model with good evaluation accuracy (~ 98%), namely, vanilla_model_classic.h5, was saved for prediction. 
+
+# the 3rd network class
+network3_keras.py - convolutional network model
+train3_keras.py - trainning environment
+processing.py - process pictures of handwritten digits
+recognize.py - recognize handwritten digits in a picture
+cnn_model_classic.h5 - trained model with good evaluation accuracy (~ 99%)
+IMG_1702.jpg, IMG_1703.jpg - examples for prediction
+requirements.txt

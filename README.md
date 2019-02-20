@@ -39,4 +39,4 @@ cnn_model_classic.h5 - trained model with good evaluation accuracy (~ 99%),
 IMG_1702.jpg, IMG_1703.jpg - examples for prediction, 
 requirements.txt - packages/modules used in this project
 
-The 3th network, convolutional network, is fully implemented using Keras. In addition, a module for recognizing any handwritten digits in picture is developped using opencv. Two examples are included, which can be correctly recognized by the saved cnn model.
+The 3th network, convolutional network, is fully implemented using Keras. In addition, a module for recognizing any handwritten digits in picture is developped using opencv. Two examples are included, which can be correctly recognized by the saved cnn model. You can use the saved model to recognize digits in any other pictures, just change the 'path' in line 10 in recognize.py to the path of the picture you want to recognize.
